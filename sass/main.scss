@@ -1,0 +1,21 @@
+@import "./base/reset";
+@import "./base/commond";
+@import "./utils/hidden";
+
+//Components
+
+@import "./components/container";
+@import "./components/section";
+@import "./components/modal";
+
+
+
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/peculiarities";
+@import "./layout/about";
+@import "./layout/team";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio";
