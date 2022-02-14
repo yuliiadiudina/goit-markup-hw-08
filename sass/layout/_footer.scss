@@ -3,19 +3,23 @@
     padding-bottom: 60px;
     padding-top: 60px;
 }
-
+.footer-cont {
+    @media screen and (min-width:1200px) {
+        display: flex;
+        flex-direction: row;
+    }
+}
 .footer-connect {
     display: block;
     text-align: center;
     margin-bottom: 60px;
     @media screen and (min-width:768px) {
         display: inline-block;
-        padding-left: 76px;
+        padding-left: 76px;}
         @media screen and (min-width:1200px) {
             text-align: left;
         }
     }
-}
 
 .footer-connect__logo {
     font-family: "Raleway", sans-serif;
@@ -79,6 +83,7 @@
     @media screen and (min-width:1200px) {
         margin-left: 70px;
         margin-right: 93px;
+    
     }
 }
 
@@ -92,6 +97,10 @@
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #FFFFFF; 
+    text-align: center;
+    @media screen and (min-width:1200px) {
+        text-align: left;
+    }
  }
 
 .footer-social-list {
@@ -122,16 +131,11 @@
  } 
 
 .footer-subscribe {
-    // width: 570px;
-    // display: inline-block; 
-    // vertical-align: top;
-    // padding-top: 12px;
-    display: block;
-    text-align: center;
+   display: block;
     @media screen and (min-width:1200px) {
-        width: 570px;
-        display: inline-block; 
-        vertical-align: top;
+        // width: 570px;
+        // display: inline-block; 
+        // vertical-align: top;
         padding-top: 12px;
     }
 }
@@ -146,7 +150,12 @@
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
+    text-align: center; 
+    @media screen and (min-width:1200px) {
+        text-align: left;
+    }
 }
+
 .footer-subscribe__input{
     display: flex;
     justify-content: center;
@@ -167,6 +176,8 @@
     @media screen and (min-width:1200px) {
         position: absolute;
         width: 358px;
+        height: 50px;
+        margin-left: 0px;
     }
 
     
@@ -197,12 +208,10 @@
     }
     @media screen and (min-width:1200px) {
         position: relative;
-        margin-left: 540px;
+        margin-left: 370px;
     }
-
     }
     
-
 
 .footer-subscribe__icon-send {
     fill: #FFFFFF;
