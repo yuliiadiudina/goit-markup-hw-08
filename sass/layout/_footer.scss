@@ -1,11 +1,20 @@
 .footer {
     background-color: #2F303A;
     padding-bottom: 60px;
-    padding-top: 66px;
+    padding-top: 60px;
 }
 
 .footer-connect {
-    display: inline-block;
+    display: block;
+    text-align: center;
+    margin-bottom: 60px;
+    @media screen and (min-width:768px) {
+        display: inline-block;
+        padding-left: 76px;
+        @media screen and (min-width:1200px) {
+            text-align: left;
+        }
+    }
 }
 
 .footer-connect__logo {
@@ -58,11 +67,19 @@
 
 
 .footer-social {
-    display: inline-block; 
-    vertical-align: top;
-    margin-left: 70px;
-    padding-top: 12px;
-    margin-right: 93px;
+    margin-bottom: 60px;
+    display: block;
+    text-align: center;
+    @media screen and (min-width:768px) {
+        display: inline-block; 
+        vertical-align: top;
+        margin-left: 165px;
+        padding-top: 12px;
+    }
+    @media screen and (min-width:1200px) {
+        margin-left: 70px;
+        margin-right: 93px;
+    }
 }
 
 .footer-social__titel {
@@ -105,10 +122,18 @@
  } 
 
 .footer-subscribe {
-    width: 570px;
-    display: inline-block; 
-    vertical-align: top;
-    padding-top: 12px;
+    // width: 570px;
+    // display: inline-block; 
+    // vertical-align: top;
+    // padding-top: 12px;
+    display: block;
+    text-align: center;
+    @media screen and (min-width:1200px) {
+        width: 570px;
+        display: inline-block; 
+        vertical-align: top;
+        padding-top: 12px;
+    }
 }
 
 .footer-subscribe__titel {
@@ -123,9 +148,9 @@
     margin-bottom: 20px;
 }
 .footer-subscribe__input{
-    position: absolute;
     display: flex;
-    width: 358px;
+    justify-content: center;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -135,10 +160,19 @@
     padding-left: 16px;
     outline: none;
     color: #FFFFFF;
+    margin-bottom: 20px;
+    @media screen and (min-width:768px) {
+        margin-left: 166px;
+    }
+    @media screen and (min-width:1200px) {
+        position: absolute;
+        width: 358px;
+    }
+
+    
 }
 
 .footer-subscribe__btn { 
-    position: relative;
     width: 200px;
     height: 50px;
     font-family: Roboto;
@@ -155,11 +189,20 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-    margin-left: 370px;
+    margin-left: 140px;
     padding: 10px 29px;
     justify-content: space-between;
+    @media screen and (min-width:768px) {
+        margin-left: 291px;
+    }
+    @media screen and (min-width:1200px) {
+        position: relative;
+        margin-left: 540px;
+    }
+
+    }
     
-}
+
 
 .footer-subscribe__icon-send {
     fill: #FFFFFF;
