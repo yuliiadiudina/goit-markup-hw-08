@@ -1,46 +1,55 @@
 .footer {
-    background-color: #2F303A;
+    background: #2F303A;
     padding-bottom: 60px;
     padding-top: 60px;
 }
 
-.footer-connect {
+
+.footer-connect__logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    @include desk { font-size: 26px;
+        line-height: 1.19;}
+    } 
+
+.footer-connect  { 
     display: block;
     text-align: center;
     margin-bottom: 60px;
     @include tab {
         display: inline-block;
-        padding-left: 76px;}
+        margin-left: 76px;
+    }
     @include desk {
         text-align: left;
-        margin-bottom: 0;
-        margin-right: 70px;
-        }
+        margin-bottom: 0px;
+        margin-left: 0px;
     }
-
-.footer-connect__logo {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #2196F3;
-    margin-bottom: 20px;
-    display: inline-block
-    
 }
+
 .footer-connect__logo-color {
     color: #ffffff;
 }
-.footer-list__item:not(:last-child) {
- margin-bottom: 8px;
+
+.footer-list {
+    margin-top: 20px;
 }
+
+.footer-list__item:not(:last-child)  {
+ margin-bottom: 8px;
+} 
+
 
 .footer-list__link {
     font-family: "Roboto", sans-serif; 
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -49,16 +58,17 @@
     &:hover, &:focus {
         color: #2196F3;
     }
-}
+} 
+
 
 .footer-list__mail, 
 .footer-list__tel { 
     font-family: "Roboto", sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
     color: #757575;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus {
@@ -68,40 +78,41 @@
 
 
 .footer-social {
-    margin-bottom: 60px;
     display: block;
     text-align: center;
     @include tab {
-        display: inline-block; 
+        display: inline-block;
         vertical-align: top;
         margin-left: 165px;
-        padding-top: 12px;
+        margin-top: 12px;
     }
     @include desk {
-        margin-left: 0;
+        margin-left: 70px;
         margin-right: 93px;
-    }
+        text-align: left;}
 }
 
+
 .footer-social__titel {
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: #FFFFFF;
     margin-bottom: 20px;
-    color: #FFFFFF; 
-    text-align: center;
-    @include desk {
-        text-align: left;
-    }
- }
+}
+
+    
 
 .footer-social-list {
     display: inline-flex;
     justify-content: center;
+    margin-bottom: 60px;
+    @include desk {
+    margin-bottom: 0px;}
 }
 
 .footer-social-list__item {
@@ -128,32 +139,35 @@
 
 .footer-subscribe {
     display: block;
+    justify-content: center;
     text-align: center;
-    @include desk {
-        width: 570px;
-        margin-top: auto;
-    }
+    margin-bottom: 60px;
+    @include desk {    display: inline-block; 
+        vertical-align: top;
+        padding-top: 12px;}
+        @include desk {
+            margin-bottom: 0px;
+            text-align: left;
+        }
 }
 
+
 .footer-subscribe__titel {
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin-bottom: 20px;
-    text-align: center;
-    @include tab {
+    margin-bottom: 20px; 
+    @include desk {
         text-align: left;
-    }
+}
 }
 
-.footer-subscribe__input{
-    display: flex;
-    justify-content: center;
+.footer-subscribe__input { 
     width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -161,51 +175,47 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: #2F303A;
-    padding-left: 16px;
     outline: none;
     color: #FFFFFF;
     margin-bottom: 20px;
-    @include tab {
-        margin-left: 150px;
-    }
-    @include tab {
-        margin-left: 0px;
-        position: absolute
-    }
-
- 
-}
-
-.footer-subscribe__btn { 
-    width: 200px;
-    height: 50px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.87%;
-    display:flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
-    margin-left: 140px;
-    padding: 10px 29px;
-    justify-content: space-between;
-    @include tab {
-        margin-left: 265px;
-    }
+    padding-left: 16px;
     @include desk {
-        margin-left: 0px;
-        position: relative;
-    }
-    }
-    
+        width: 358px;
+         margin-bottom: 0px;
+        }}
 
-.footer-subscribe__icon-send {
-    fill: #FFFFFF;
-}
+
+.footer-subscribe__btn {
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.88;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: #FFFFFF;
+        background: #2196F3;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        padding: 10px 29px;
+        margin-left: 140px;
+        @include tab {
+            margin-left: 276px;
+        }
+        @include desk {
+            position: relative;
+            margin-top: -50px;
+            margin-left: 370px;
+            justify-content: space-between;
+            
+         }}
+
+ .footer-subscribe__icon-send  {
+    fill: #FFFFFF;}

@@ -35,14 +35,18 @@
 }
 .peculiarities-list {     
     // display: flex;
-    align-content: center;
-    align-items: center;
+/*     align-content: center;
+    align-items: center; */
     @media screen and (min-width:768px) {
         display: flex;
         flex-wrap: wrap;
         margin-left: -30px;
     }
-    
+    @media screen and (min-width:1200px) {
+        align-content: center;
+        align-items: center;
+        display: flex }
+
 }
 
 .peculiarities-list__item {
